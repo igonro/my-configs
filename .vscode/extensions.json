@@ -1,0 +1,17 @@
+{
+    "recommendations": [
+        // Theme
+        "spaceBox.spacebox-theme",
+        "spaceBox.spacebox-ui",
+        "pkief.material-icon-theme",
+        // Python
+        "ms-python.python",
+        "charliermarsh.ruff",
+        // Others
+        "esbenp.prettier-vscode",
+        "redhat.vscode-yaml",
+        "tamasfe.even-better-toml",
+        "shardulm94.trailing-spaces",
+        "oderwat.indent-rainbow"
+    ]
+}

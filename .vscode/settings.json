@@ -1,0 +1,80 @@
+{
+    // Basic style configuration
+    "window.titleBarStyle": "custom",
+    "window.zoomLevel": 2,
+    "workbench.startupEditor": "welcomePage",
+    "workbench.colorTheme": "SpaceBox Nova",
+    "workbench.iconTheme": "material-icon-theme",
+
+    // Fonts configuration
+    "editor.fontFamily": "'Source Code Pro', 'Ubuntu Mono', 'monospace'",
+    "editor.fontSize": 16,
+    "terminal.integrated.fontFamily": "'Ubuntu Mono', 'MesloLGS NF', 'monospace'",
+    "terminal.integrated.fontSize": 16,
+
+    // Other style configurations
+    "editor.cursorBlinking": "phase",
+    "editor.rulers": [88],
+    "editor.minimap.enabled": false,
+    "editor.multiCursorPaste": "spread",
+
+    // Themes customizations
+    "workbench.colorCustomizations": {
+        "[Night Owl (No Italics)]": {
+            "activityBar.background": "#000C1D",
+            "activityBar.border": "#102a44",
+            "editorGroup.border": "#102a44",
+            "sideBar.background": "#001122",
+            "sideBar.border": "#102a44",
+            "sideBar.foreground": "#8BADC1"
+        },
+        "[Dracula]": {
+            "editor.selectionBackground": "#bd93f980",
+            "editor.selectionHighlightBackground": "#59595e88"
+        }
+    },
+
+    // Python configuration
+    "python.languageServer": "Pylance",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "ruff.lint.args": [
+        "--line-length=88",
+        "--extend-select=I",
+        "--extend-select=S",
+        "--extend-select=B",
+        "--extend-select=A",
+        "--extend-select=PD",
+        "--extend-select=UP",
+        "--extend-select=RUF",
+        "--fixable=I"
+    ],
+
+    // Prettier configuration
+    "editor.tabSize": 4,
+    "prettier.tabWidth": 4,
+    "prettier.trailingComma": "all",
+    "[css][javascript][jsonc][json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    // IndentRainbow configuration
+    "indentRainbow.includedLanguages": ["json", "jsonc", "yaml", "python"],
+    "indentRainbow.indicatorStyle": "light",
+    "indentRainbow.lightIndicatorStyleLineWidth": 1,
+    "indentRainbow.colors": [
+        "rgba(255,255,64,0.7)",
+        "rgba(127,255,127,0.7)",
+        "rgba(255,127,255,0.7)",
+        "rgba(79,236,236,0.7)"
+    ],
+
+    // Others
+    "telemetry.telemetryLevel": "off"
+}
