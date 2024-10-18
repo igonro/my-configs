@@ -1,20 +1,23 @@
 {
     // Basic style configuration
     "window.titleBarStyle": "custom",
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 0,
     "workbench.startupEditor": "welcomePage",
     "workbench.colorTheme": "SpaceBox Nova",
     "workbench.iconTheme": "material-icon-theme",
 
     // Fonts configuration
-    "editor.fontFamily": "'Source Code Pro', 'Ubuntu Mono', 'monospace'",
-    "editor.fontSize": 16,
-    "terminal.integrated.fontFamily": "'Ubuntu Mono', 'MesloLGS NF', 'monospace'",
-    "terminal.integrated.fontSize": 16,
+    "editor.fontFamily": "'Cascadia Mono', 'Source Code Pro', 'Ubuntu Mono', 'monospace'",
+    "editor.fontSize": 15,
+    "editor.fontWeight": "normal",
+    "terminal.integrated.fontFamily": "'Cascadia Mono', 'Ubuntu Mono', 'MesloLGS NF', 'monospace'",
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontWeight": "normal",
 
     // Other style configurations
     "editor.cursorBlinking": "phase",
     "editor.rulers": [88],
+    "editor.tabSize": 4,
     "editor.minimap.enabled": false,
     "editor.multiCursorPaste": "spread",
 
@@ -44,6 +47,13 @@
         },
         "editor.defaultFormatter": "charliermarsh.ruff"
     },
+    // "notebook.formatOnCellExecution": true,
+    // "notebook.formatOnSave.enabled": true,
+    // "notebook.codeActionsOnSave": {
+    //     "notebook.source.fixAll": "explicit",
+    //     "notebook.source.organizeImports": "explicit"
+    // },
+
     "ruff.lint.args": [
         "--line-length=88",
         "--extend-select=I",
@@ -57,11 +67,12 @@
     ],
 
     // Prettier configuration
-    "editor.tabSize": 4,
     "prettier.tabWidth": 4,
     "prettier.trailingComma": "all",
-    "[css][javascript][jsonc][json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "[yaml][css][javascript][jsonc][json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true
     },
 
     // IndentRainbow configuration
@@ -76,5 +87,8 @@
     ],
 
     // Others
-    "telemetry.telemetryLevel": "off"
+    "telemetry.telemetryLevel": "off",
+    "jupyter.askForKernelRestart": false,
+    "notebook.output.wordWrap": true,
+    "extensions.ignoreRecommendations": true
 }
