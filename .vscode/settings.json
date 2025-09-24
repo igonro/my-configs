@@ -3,15 +3,16 @@
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,
     "workbench.startupEditor": "welcomePage",
-    "workbench.colorTheme": "SpaceBox Nova",
+    "workbench.colorTheme": "Night Owl (No Italics)",
     "workbench.iconTheme": "material-icon-theme",
 
     // Fonts configuration
-    "editor.fontFamily": "'Cascadia Mono', 'Source Code Pro', 'Ubuntu Mono', 'monospace'",
-    "editor.fontSize": 15,
+    // Available: [Cascadia Code, Fira Code, Source Code Pro] IliL1
+    "editor.fontFamily": "'Cascadia Code', 'monospace'",
+    "editor.fontSize": 14,
     "editor.fontWeight": "normal",
-    "terminal.integrated.fontFamily": "'Cascadia Mono', 'Ubuntu Mono', 'MesloLGS NF', 'monospace'",
-    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontFamily": "'Fira Code', 'monospace'",
+    "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontWeight": "normal",
 
     // Other style configurations
@@ -47,32 +48,28 @@
         },
         "editor.defaultFormatter": "charliermarsh.ruff"
     },
-    // "notebook.formatOnCellExecution": true,
-    // "notebook.formatOnSave.enabled": true,
-    // "notebook.codeActionsOnSave": {
-    //     "notebook.source.fixAll": "explicit",
-    //     "notebook.source.organizeImports": "explicit"
-    // },
-
-    "ruff.lint.args": [
-        "--line-length=88",
-        "--extend-select=I",
-        "--extend-select=S",
-        "--extend-select=B",
-        "--extend-select=A",
-        "--extend-select=PD",
-        "--extend-select=UP",
-        "--extend-select=RUF",
-        "--fixable=I"
-    ],
+    "notebook.formatOnCellExecution": true,
+    "notebook.formatOnSave.enabled": true,
+    "notebook.codeActionsOnSave": {
+        "notebook.source.fixAll": "explicit",
+        "notebook.source.organizeImports": "explicit"
+    },
+    "ruff.nativeServer": "on",
 
     // Prettier configuration
-    "prettier.tabWidth": 4,
-    "prettier.trailingComma": "all",
-    "[yaml][css][javascript][jsonc][json]": {
+    "[css][javascript][jsonc][json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "prettier.tabWidth": 4,
+        "prettier.trailingComma": "all"
+    },
+    "[yaml]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.tabSize": 2,
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "prettier.tabWidth": 2,
+        "prettier.trailingComma": "all"
     },
 
     // IndentRainbow configuration
@@ -90,5 +87,9 @@
     "telemetry.telemetryLevel": "off",
     "jupyter.askForKernelRestart": false,
     "notebook.output.wordWrap": true,
-    "extensions.ignoreRecommendations": true
+    "extensions.ignoreRecommendations": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "git.autofetch": true,
+    "terminal.integrated.stickyScroll.enabled": false
 }
